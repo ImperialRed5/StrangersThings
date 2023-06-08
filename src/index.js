@@ -6,11 +6,8 @@ import { fetchPosts } from "./api/index";
 const App = () => {
   const [posts, setPosts] = useState("");
   const fetchResults = fetchPosts();
-  // console.log(fetchResults);
-  // fetchPosts();
+  console.log(fetchResults);
   return <div></div>;
-
-  fetchPosts();
 };
 
 // fetchPosts();
