@@ -2,7 +2,7 @@ import React from "react";
 import { BASE_URL } from "../api";
 
 const Delete = ({ post, token }) => {
-  const handleDelete = async () => {
+  const deletePost = async () => {
     try {
       const response = await fetch(`${BASE_URL}/posts/${post._id}`, {
         method: "DELETE",
@@ -20,7 +20,7 @@ const Delete = ({ post, token }) => {
   };
   return (
     <div>
-      <button onClick={handleDelete}>Delete</button>
+      <button onClick={deletePost}>Delete</button>
     </div>
   );
 };
